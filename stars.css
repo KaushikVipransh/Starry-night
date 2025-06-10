@@ -1,0 +1,74 @@
+     body {
+      margin: 0;
+      padding: 0;
+      font-family:'Quicksand', sans-serif;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      height: 100vh;
+      overflow: hidden;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+   .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+      animation: moveStars 200s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: -10000px 5000px; }
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-family:'Pacifico', cursive;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      background-color: #ffffff;
+      color: #1b2735;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .spotify-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+    }
+
+    .message {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.1rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      font-family: 'Quicksand', sans-serif;
+    }
+
